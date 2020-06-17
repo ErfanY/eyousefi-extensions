@@ -15,7 +15,7 @@ class CustomerCreditCheckP2 extends ExtendM3Trigger {
   void main() {
     String creditLimit = session.parameters.get("creditLimit")
     if (creditLimit == null) {
-      logger.info("No previous credit limit info was found")
+      logger.info("No previous credit limit info was found here")
     }
     if (!checkStoppedOrders(creditLimit, interactive.display.fields.get("WRCRLM").toString())) {
       return
