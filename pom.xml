@@ -89,6 +89,11 @@
           </gitFlowConfig>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>com.infor.m3</groupId>
+        <artifactId>xtendm3-maven-plugin</artifactId>
+        <version>0.1.0</version>
+      </plugin>
     </plugins>
   </build>
 </project>
