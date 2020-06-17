@@ -1,3 +1,4 @@
+// Comment
 class CustomerCreditCheckP2 extends ExtendM3Trigger {
   private final LoggerAPI logger
   private final SessionAPI session
