@@ -13,8 +13,6 @@ jobs:
           java-version: 1.8
       - name: Build with Maven
         run: mvn -B package --file pom.xml
-      - name: Build with Maven
-        run: mvn -B package --file pom.xml
       - name: Lint XtendM3 Extensions
         run: mvn -B xtendm3:lint --file pom.xml
       - name: Export XtendM3 Extensions
