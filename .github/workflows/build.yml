@@ -25,8 +25,8 @@ jobs:
         name: Upload exported extensions
         if: ${{ success() }}
         with:
-          - name: exported-extension
-            path: target/exported-*.zip
+          name: exported-extension
+          path: target/exported-*.zip
       - name: Cache Maven packages
         uses: actions/cache@v2
         with:
