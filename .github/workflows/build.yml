@@ -21,7 +21,8 @@ jobs:
         run: mvn -B xtendm3:export --file pom.xml
       - name: Export XtendM3 Extensions
         run: mvn -B xtendm3:export --file pom.xml
-      - name: Upload exported extensions
+      - uses: actions/upload-artifact@v2
+        name: Upload exported extensions
         if: ${{ success() }}
         with:
           - name: exported-extension
